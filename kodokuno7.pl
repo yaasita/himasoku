@@ -9,7 +9,7 @@ for ( 10000000..99999999 ){
         my $divisor = $_;
         next if $dividend % $divisor != 0;
         my $quotient = $dividend / $divisor;
-        next if $quotient !~ /^\d7\d\d\d$/;
+        next if $quotient !~ /^\d7\d0\d$/;
 
         my $stage_1 = substr($quotient,0,1) * $divisor;
         next unless length($stage_1) == 4;
